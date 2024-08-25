@@ -78,7 +78,7 @@ def config_mlflow():
                               log_model_signatures=True)
 
 
-def train_model(model,X_train, y_train, is_train=True):
+def train_model(model, X_train, y_train, is_train=True):
     with mlflow.start_run(run_name='experiment_mlops_ead') as run:
         model.fit(X_train,
                   y_train,

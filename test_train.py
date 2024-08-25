@@ -66,7 +66,7 @@ def test_train_model(sample_data):
     Returns:
         None
     """
-    X = sample_data.drop(['fetal_health'], axis=1)
+    X = sample_data.drop(['fetal_healh'], axis=1)
     y = sample_data['fetal_health'] - 1
     model = create_model(X)
     train_model(model, X, y, is_train=False)
